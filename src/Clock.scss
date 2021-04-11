@@ -1,0 +1,126 @@
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#beep {
+    display: none;
+}
+
+.clock-body {
+    display: flex;
+    min-width : 20%;
+    flex-direction: column;
+    padding : 0.5rem 1.2rem 0.5rem 1.2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.4);
+    background : linear-gradient(to right,rgb(231, 229, 229),rgb(196, 191, 191),rgb(240, 238, 238));
+}
+
+.header {
+    font-size : 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.timer-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}
+
+.break-control {
+    display : flex;
+    flex-direction: column;
+}
+
+#break-label, #session-label {
+    font-size: 1.2rem;
+}
+
+.break-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.break-length-display { 
+    width : 70%;
+    font-size: 1.2rem;
+}
+
+.session-control {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.9rem;
+} 
+
+.session-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.session-length-display {
+    width : 70%;
+    font-size: 1.2rem;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    background-color:  rgb(164,169,153);
+    box-shadow: inset 1px 1px rgba(0,0,0,0.4);
+}
+
+.timer-container {
+    padding : 0.3rem;
+    border : 1px solid gray;
+    border-radius: 5px;
+}
+
+#timer-label {
+    font-size: 1.7rem;
+}
+
+#time-left {
+    font-size: 3.9rem;
+    font-weight: 100;
+}
+
+#break-decrement, #break-increment, #session-increment, #session-decrement {
+    all: unset;
+    padding : 2px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#break-decrement:hover, #break-increment:hover, #session-increment:hover, #session-decrement:hover {
+    color: rgb(4, 166, 241)
+}
+
+#start-stop, #reset {
+    all :unset;
+    padding: 3px 3px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#reset {
+    margin-left: 0.3rem;
+}
+
+#start-stop:hover, #reset:hover {
+    color: rgb(4, 166, 241)
+}

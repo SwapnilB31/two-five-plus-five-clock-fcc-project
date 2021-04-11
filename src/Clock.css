@@ -1,0 +1,180 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#beep {
+  display: none;
+}
+
+.clock-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.4);
+  background: -webkit-gradient(linear, left top, right top, from(#e7e5e5), color-stop(#c4bfbf), to(#f0eeee));
+  background: linear-gradient(to right, #e7e5e5, #c4bfbf, #f0eeee);
+}
+
+.header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.timer-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.break-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#break-label, #session-label {
+  font-size: 1.2rem;
+}
+
+.break-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.break-length-display {
+  width: 70%;
+  font-size: 1.2rem;
+}
+
+.session-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1.9rem;
+}
+
+.session-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.session-length-display {
+  width: 70%;
+  font-size: 1.2rem;
+}
+
+.timer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.4rem;
+  background-color: #a4a999;
+  -webkit-box-shadow: inset 1px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.timer-container {
+  padding: 0.3rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#timer-label {
+  font-size: 1.7rem;
+}
+
+#time-left {
+  font-size: 3.9rem;
+  font-weight: 100;
+}
+
+#break-decrement, #break-increment, #session-increment, #session-decrement {
+  all: unset;
+  padding: 2px 2px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+#break-decrement:hover, #break-increment:hover, #session-increment:hover, #session-decrement:hover {
+  color: #04a6f1;
+}
+
+#start-stop, #reset {
+  all: unset;
+  padding: 3px 3px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#reset {
+  margin-left: 0.3rem;
+}
+
+#start-stop:hover, #reset:hover {
+  color: #04a6f1;
+}
+/*# sourceMappingURL=Clock.css.map */
